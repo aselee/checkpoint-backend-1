@@ -9,9 +9,8 @@ mongoose.connect("mongodb://aselee:aselee9324@ds123790.mlab.com:23790/aca-cp1");
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
-const app = express();
-app.use(express.static('public'));
-// app.use(parser.json());
+
+app.use(parser.json());
 
 const messageRout = require("./Routes/messageRouter");
 app.use(messageRout);
