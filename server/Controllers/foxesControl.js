@@ -1,5 +1,7 @@
 const fetch = ("node-fetch");
 
+// mongoose step by step
+
 // module.exports.list = function list(request, response) {
 //     order.find({}).exec()
 //    .then(orders => {
