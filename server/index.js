@@ -22,31 +22,6 @@ const foxesRout = require(".Routes/foxesRouter");
 app.use(foxesRout);
 
 //data.csv
-app.get("/dateTime", (request, response) => response.send(Date().toLocaleString()));
-app.get("/newComments", function (request, response) {
-  fs.readFile("server/data.csv", "utf8", function (err, data){
-    const dataInfo = data.split("\n")[1];
-    return response.send(dataInfo.split(",")[0]);
-  });
-});
-app.get("/newTasks", function (request, response) {
-  fs.readFile("server/data.csv", "utf8", function (err, data){
-    const dataInfo = data.split("\n")[1];
-    return response.send(dataInfo.split(",")[1]);
-  });
-});
-app.get("/newOrders", function (request, response) {
-  fs.readFile("server/data.csv", "utf8", function (err, data){
-    const dataInfo = data.split("\n")[1];
-    return response.send(dataInfo.split(",")[2]);
-  });
-});
-app.get("/tickets", function (request, response) {
-  fs.readFile("server/data.csv", "utf8", function (err, data){
-    const dataInfo = data.split("\n")[1];
-    return response.send(dataInfo.split(",")[3]);
-  });
-});
 
 
 // Calling server
