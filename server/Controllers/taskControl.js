@@ -16,7 +16,7 @@ module.exports.show = function show(request, response) {
  
 module.exports.create = function create(request, response) {
   const newTask = new Task({
-    name: request.body.name,
+    task: request.body.name,
     date: new Date(),
     order: request.body.tasks
   })

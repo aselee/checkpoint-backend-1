@@ -29,7 +29,7 @@ function TasksPanel(props) {
         <div className="panel-body">
             <div className="list-group">
     
-               Name: <input id="taskName" />
+               Text: <input id="taskName" />
                Date: <input id="taskDate"/>
                <button onClick={
                 ()=>{

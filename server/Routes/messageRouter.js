@@ -1,4 +1,4 @@
-const express = "express";
+const express = require("express");
 const router = express.Router();
 const {list,show,create,update,remove} = require(
     "../Controllers/messageControl");
