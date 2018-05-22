@@ -10,9 +10,9 @@ const fetch = ("node-fetch");
 //   };
 
   module.exports.show = function show(request, response) {
-      fetch("https://randomfox.ca/floof");
-      .then(res => res.json());
-      .then(res => response.json(json.image));
+      fetch("https://randomfox.ca/floof")
+      .then(res => res.json())
+      .then(res => response.json(json.image))
   };
    
 //   module.exports.create = function create(request, response) {
