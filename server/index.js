@@ -25,7 +25,6 @@ app.use(foxesRout);
 //data.csv
 app.get("/dateTime", (request, response) => response.send(Date()));
 fs.readFile("server/data.csv", "utf8", (err,data) => {
-  if(err) throw(err)
   const dataInfo = data.split("\n")
   app.get("/newComments", (request, response) => {
     response.send(dataInfo[1].split(",")[0])
@@ -46,4 +45,5 @@ app.listen(3011, (err) => {
 if (err) {
   return console.log("Oops", err);
 }
+  console.log("working server 3011");
 });
